@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="description" content="%description%">
+        <meta name="keywords" content="%keywords%">
+        <title>%title%</title>
+        <!-- Bootstrap -->
+        <link href="https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative" rel="stylesheet">
+        <link href="fonts/ionicons/2.0.1/css/ionicons.min.css" type="text/css" media="screen" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css"/>
+        <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+        <![endif]-->
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+        <meta name="msapplication-TileColor" content="#181818">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#181818">
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <script>
+        	%script%
+        </script>
+    </head>
+    <body data-spy="scroll" data-target=".navbar-custom">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- ============== HEADER =============== -->
+                <header id="home">
+                    <!-- Main nav -->
+                    <nav class="navbar navbar-inverse navbar-custom navbar-fixed-top">
+                        <div class="container">
+                            <div class="navbar navbar-header">
+                                <button type="button" class="navbar-toggle custom-toggle-btn" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+                                <span class="sr-only">
+                                    %navigation%
+                                </span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse" id="main-nav">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="plain-link"><a href="#features">%heroes%</a></li>
+                                    <li class="plain-link"><a href="#gallery">%gallery%</a></li>
+                                    <li class="plain-link"><a href="%play_link%">%play%</a></li>
+                                    %languages_string%
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <img id="header__background" src="img/Dragonic.jpg" alt="img/Dragonic.jpg">
+                    <h1>
+                        <img onload="this.style.opacity='1';" class="big-logo" src="img/Dragonic-Final.png" alt="Logo">
+                    </h1>
+                </header>
+            </div>
+            <!-- ============== DIVIDER ============== -->
+            <div class="Divider">
+                <hr class="Divider-rule">
+            </div>
+            <!-- ============== FEATURES SECTION =============== -->
+            <div class="row pattern">
+                <section class="features" id="features">
+                    <div class="container">
+                        <div class="row">
+                            <h2>%intro_title%</h2>
+                            <p class="section-description">
+                                %intro_text%
+                            </p>
+                        </div>
+                        <div class="row items-container bottom-wrapper">
+                            <p>&nbsp;<br>&nbsp;</p>
+                        </div>
+                        <div class="row">
+                            <h2>%hero_title%</h2>
+                            <article id="features-item" class="col-sm-6 col-md-3 box features-item thumbnail-100" data-toggle="modal" data-target="#shop-modal">
+                                <img class="features-img" src="img/character-1.png" alt="%hero1_alt%" data-attack="%hero1_attack%" data-defence="%hero1_defence%" data-sattack="%hero1_sattack%" data-rattack="%hero1_rattack%" data-ppower="%hero1_ppower%" data-mpower="%hero1_mpower%">
+                                <span id="item-name-caption" class="item-name-caption hidden-xs">
+                                %hero1_title%
+                                </span>
+                                <h3>%hero1_title%</h3>
+                                <p class="features-p">
+                                    %hero1_text%
+                                </p>
+                            </article>
+                            <article class="col-sm-6 col-md-3 box features-item thumbnail-100" data-toggle="modal" data-target="#shop-modal">
+                                <img class="features-img" src="img/character-2.png" alt="%hero2_alt%" data-attack="%hero2_attack%" data-defence="%hero2_defence%" data-sattack="%hero2_sattack%" data-rattack="%hero2_rattack%" data-ppower="%hero2_ppower%" data-mpower="%hero2_mpower%">
+                                <span id="item-name-caption" class="item-name-caption hidden-xs">
+                                %hero2_title%
+                                </span>
+                                <h3>%hero2_title%</h3>
+                                <p class="features-p">
+                                    %hero2_text%
+                                </p>
+                            </article>
+                            <div class="clearfix visible-sm-block"></div>
+                            <article class="col-sm-6 col-md-3 box features-item thumbnail-100" data-toggle="modal" data-target="#shop-modal">
+                                <img class="features-img" src="img/character-3.png" alt="%hero3_alt%" data-attack="%hero3_attack%" data-defence="%hero3_defence%" data-sattack="%hero3_sattack%" data-rattack="%hero3_rattack%" data-ppower="%hero3_ppower%" data-mpower="%hero3_mpower%">
+                                <span id="item-name-caption" class="item-name-caption hidden-xs">
+                                %hero3_title%
+                                </span>
+                                <h3>%hero3_title%</h3>
+                                <p class="features-p">
+                                    %hero3_text%
+                                </p>
+                            </article>
+                            <article class="col-sm-6 col-md-3 box features-item thumbnail-100" data-toggle="modal" data-target="#shop-modal">
+                                <img class="features-img" src="img/character-4.png" alt="%hero4_alt%" data-attack="%hero4_attack%" data-defence="%hero4_defence%" data-sattack="%hero4_sattack%" data-rattack="%hero4_rattack%" data-ppower="%hero4_ppower%" data-mpower="%hero4_mpower%">
+                                <span id="item-name-caption" class="item-name-caption hidden-xs">
+                                %hero4_title%
+                                </span>
+                                <h3>%hero4_title%</h3>
+                                <p class="features-p">
+                                    %hero4_text%
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- ============== DIVIDER ============== -->
+            <div class="Divider">
+                <hr class="Divider-rule">
+            </div>
+            <!-- ============== GALLERY SECTION =============== -->
+            <div class="row pattern-dark">
+                <section class="gallery" id="gallery">
+                    <div class="container">
+                        <div class="row">
+                            <h2>%gallery_title%</h2>
+                            <p class="section-description">
+                                %gallery_text%
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="dragonic-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <div class="modal-corner modal-corner-top-left"></div>
+                            <div class="modal-corner modal-corner-top-right"></div>
+                            <div class="modal-corner modal-corner-bottom-left"></div>
+                            <div class="modal-corner modal-corner-bottom-right"></div>
+                            <div class="modal-border modal-border-top"></div>
+                            <div class="modal-border modal-border-right"></div>
+                            <div class="modal-border modal-border-bottom"></div>
+                            <div class="modal-border modal-border-left"></div>
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#dragonic-carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#dragonic-carousel" data-slide-to="1"></li>
+                                <li data-target="#dragonic-carousel" data-slide-to="2"></li>
+                                <li data-target="#dragonic-carousel" data-slide-to="3"></li>
+                                <li data-target="#dragonic-carousel" data-slide-to="4"></li>
+                                <li data-target="#dragonic-carousel" data-slide-to="5"></li>
+                                <li data-target="#dragonic-carousel" data-slide-to="6"></li>
+                                <li data-target="#dragonic-carousel" data-slide-to="7"></li>
+                                <li data-target="#dragonic-carousel" data-slide-to="8"></li>
+                            </ol>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="https://shrd5.ru/pybxk.jpg" alt="%screenshot1_text%">
+                                    <div class="carousel-caption">
+                                        %screenshot1_text%
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="https://shrd5.ru/J214k.jpg" alt="%screenshot2_text%">
+                                    <div class="carousel-caption">
+                                        %screenshot2_text%
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="https://shrd5.ru/yctyd.jpg" alt="%screenshot3_text%">
+                                    <div class="carousel-caption">
+                                        %screenshot3_text%
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="https://shrd5.ru/Chgzg.jpg" alt="%screenshot4_text%">
+                                    <div class="carousel-caption">
+                                        %screenshot4_text%
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="https://shrd5.ru/Yqlft.jpg" alt="%screenshot5_text%">
+                                    <div class="carousel-caption">
+                                        %screenshot5_text%
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="https://shrd5.ru/q6JSr.jpg" alt="%screenshot6_text%">
+                                    <div class="carousel-caption">
+                                        %screenshot6_text%
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="https://shrd5.ru/Y2tir.jpg" alt="%screenshot7_text%">
+                                    <div class="carousel-caption">
+                                        %screenshot7_text%
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="https://shrd5.ru/JCwad.jpg" alt="%screenshot8_text%">
+                                    <div class="carousel-caption">
+                                        %screenshot8_text%
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="https://shrd5.ru/HM65b.jpg" alt="%screenshot9_text%">
+                                    <div class="carousel-caption">
+                                        %screenshot9_text%
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#dragonic-carousel" role="button" data-slide="prev">
+                            <span class="slider-arrow slider-arrow-left" aria-hidden="true"></span>
+                            <span class="sr-only">%previous%</span>
+                            </a>
+                            <a class="right carousel-control" href="#dragonic-carousel" role="button" data-slide="next">
+                            <span class="slider-arrow slider-arrow-right" aria-hidden="true"></span>
+                            <span class="sr-only">%next%</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="shop-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <span class="Video-border Video-border--top"></span>
+                        <span class="Video-border Video-border--right"></span>
+                        <span class="Video-border Video-border--bottom"></span>
+                        <span class="Video-border Video-border--left"></span>
+                        <span class="Video-corner Video-corner--topLeft"></span>
+                        <span class="Video-corner Video-corner--topRight"></span>
+                        <span class="Video-corner Video-corner--bottomRight"></span>
+                        <span class="Video-corner Video-corner--bottomLeft"></span>
+                        <div class="modal-header pattern">
+                            <button type="button" class="close close_button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                        </div>
+                        <div class="modal-body pattern-dark clearfix" id="modalBody">
+                            <img src="" id="showcase-img" class="img-thumbnail" alt="Showcase Dragonic Game">
+                            <ul id="model-feats">
+                                <li>Example</li>
+                                <li>Example</li>
+                                <li>Example</li>
+                                <li>Example</li>
+                                <li>Example</li>
+                                <li>Example</li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <!-- <div class="modal-footer pattern"> -->
+                            <!--<button type="button" class="btn">Order now</button>-->
+                            <!-- <a id="shop-modal-hide" xmlns="http://www.w3.org/1999/xhtml" class="button-game shop-modal-hide" href="%play_link%" target=_BLANK> -->
+                            <!-- <span class="button-game-bg-left"></span> -->
+                            <!-- <span class="button-game-bg-mid"> -->
+                            <!-- <span>%download_and_play%</span> -->
+                            <!-- </span> -->
+                            <!-- <span class="button-game-bg-right"></span> -->
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============== DIVIDER ============== -->
+            <div class="Divider">
+                <hr class="Divider-rule">
+            </div>
+            <!-- ============== TESTIMONIALS SECTION =============== -->
+            <div class="row">
+                <section class="testimonials" id="testimonials">
+                    <div class="container">
+                        <a id="shop-modal-hide" xmlns="http://www.w3.org/1999/xhtml" class="button-game shop-modal-hide" href="%play_link%" target=_BLANK>
+                            <span class="button-game-bg-left"></span>
+                            <span class="button-game-bg-mid">
+                            <span>%download_and_play%</span>
+                            </span>
+                            <span class="button-game-bg-right"></span>
+                        </a>
+                    </div>
+                </section>
+            </div>
+            <!-- ============== DIVIDER ============== -->
+            <div class="Divider">
+                <hr class="Divider-rule">
+            </div>
+            <!-- ============== FOOTER =============== -->
+            <div class="row pattern-dark">
+                <footer class="container footer">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6">
+                            <nav class="footer-nav">
+                                <ul>
+                                    <li><a href="#features">%heroes%</a></li>
+                                    <li><a href="#gallery">%gallery%</a></li>
+                                    <li><a href="%play_link%">%play%</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!--<div class="col-xs-12 col-sm-6">
+                            <nav class="social-nav">
+                                <a href="#"><span class="ion-social-facebook"></span></a>
+                                <a href="#"><span class="ion-social-twitter"></span></a>
+                                <a href="#"><span class="ion-social-youtube"></span></a>
+                                <a href="#"><span class="ion-social-instagram"></span></a>
+                            </nav>
+                        </div>-->
+                    </div>
+                    <div class="row">
+                        <p class="copyright">Copyright &copy; %year% by %developers%</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <!-- ============== SCRIPTS =============== -->
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <script src="js/bootstrap/bootstrap.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/jquery-mobile-custom/jquery.mobile.custom.min.js"></script>
+    </body>
+</html>

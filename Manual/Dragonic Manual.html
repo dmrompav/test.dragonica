@@ -1,0 +1,669 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Dragonic - Premium Gaming Landing Page Manual</title>
+
+	<!-- CSS -->
+	<!-- Bootstrap core CSS -->
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+	<link href="assets/css/prettify.css" rel="stylesheet">
+
+	<!-- Custom styles CSS -->
+	<link href="assets/css/style.css" rel="stylesheet" media="screen">
+
+</head>
+<body>
+
+	<div class="container main">
+		<div class="row">
+
+			<div class="col-md-3">
+
+				<div class="sidebar hidden-print my_affix" role="complementary" data-spy="affix" data-offset-top="10" data-offset-bottom="200">
+					<ul class="nav sidenav">
+						<li class="active"><a href="#introduction">Introduction</a></li>
+						<li class="active"><a href="#structure">Landing Page Structure</a></li>
+							<ul>
+								<li><a href="#structure-menu">Menu</a></li>
+								<li><a href="#structure-header">Header</a></li>
+								<li><a href="#structure-divider">Divider</a></li>
+								<li><a href="#structure-introduction">Introduction</a></li>
+								<li><a href="#structure-gallery">Gallery</a></li>
+								<li><a href="#structure-store">Store</a></li>
+								<li><a href="#structure-review">Reviews &amp; Testimonials</a></li>
+								<li><a href="#structure-contact">Contact</a></li>
+								<li><a href="#structure-footer">Footer</a></li>
+							</ul>
+						<li class="active"><a href="#youtube">Light YouTube Embed</a></li>
+						<li class="active"><a href="#maps">Google Maps</a></li>
+						<li class="active"><a href="#fonts">Google Fonts</a></li>
+						<li class="active"><a href="#ionicons">Ionicons</a></li>
+						<li class="active"><a href="#responsive">Responsive Classes</a></li>
+						<li class="active"><a href="#zoom">Stop Pinch Zoom</a></li>
+						<li class="active"><a href="#favicon">Favicon</a></li>
+						<li class="active"><a href="#colors">Theme Colors &amp; Textures</a></li>
+						<li class="active"><a href="#seo">SEO</a></li>
+						<li class="active"><a href="#changelog">Changelog</a></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="col-md-9">
+
+				<section class="header">
+					<h1>Dragonic - Premium Gaming Landing Page Manual</h1>
+				</section>
+
+				<section class="section">
+
+					<h2 id="introduction">Introduction</h2>
+					<h4>Greetings hero!</h4>
+					<p>Three cheers for choosing this landing page! Should any questions arise, please feel free to email us <a href="mailto:info@senseiminimal.com">here</a>. For the time being... Stay awhile and listen.</p>
+
+					<!-- Customization -->
+
+					<h2 id="structure">Landing Page Structure</h2>
+					<p>All different sections can easily be replicated, duplicated, or placed in a different order.</p>
+					<p>The HTML is structured in an easy-to-read way, with comments acting as titles for each differect section.</p>
+					<ul>
+						<li><a href="#structure-menu">Menu</a> - Company Logo, Anchors &amp; Burger Mobile Menu</li>
+						<li><a href="#structure-header">Header</a> - Game Logo &amp; Concept Art</li>
+						<li><a href="#structure-divider">Divider</a></li>
+						<li><a href="#structure-introduction">Introduction</a> - Intro Text &amp; Game Features with Modal Popup</li>
+						<li><a href="#structure-gallery">Gallery</a> - Video &amp; Screenshots</li>
+						<li><a href="#structure-store">Store</a> - Choose Version Modal Popup</li>
+						<li><a href="#structure-review">Reviews &amp; Testimonials</a></li>
+						<li><a href="#structure-contact">Contact</a> - Contact Form &amp; Google Maps</li>
+						<li><a href="#structure-footer">Footer</a> - Lower Menu, Social Icons &amp; Copyright®</li>
+					</ul>
+					<p>Please navigate each section to learn how to handle your every need.<br><br></p>
+
+					<h4 id="structure-menu">Menu</h4>
+					<p>Open the file <strong>Company Logo.PSD</strong> in order to get your own logo on the top right. Every section you add is connected through anchors with smooth scrolling in the page. You can easily change the colors &amp; styles through the <strong>_main-nav.scss</strong> file.</p>
+					<p>If you want to add a Search option and connect it to your page, you will find the following commented code in the <strong>index.html</strong> file. Simply un-comment and proceed. The CSS can be found inside the <strong>_dropdown-searchbox.scss</strong> file.</p>
+
+					<p>
+						<textarea class="form-control" rows="12" style="width:100%">
+<!-- SEARCH
+<div class="btn-group">
+	<button type="button" class="search-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		<span class="ion-search"></span>
+	</button>
+	<div class="dropdown-menu dropdown-search-box animated fadeIn">
+		<span class="ion-android-arrow-dropup searchbox-caret animated fadeIn"></span>
+			<form method="get" action="#">
+				<input type="text" placeholder="Search..." class="search-box" required>
+			</form>
+		</div>
+</div>-->
+						</textarea>
+					</p>
+
+
+					<h4 id="structure-header">Header</h4>
+					<p>Make your Header Background Image at a resolution of 1920x1080 pixels. There is a slight transparent gradient to make the image more dramatic, whose values you can easily change by yourself in the <strong>_header.scss</strong> file. Make sure your main theme is always inside the viewport of every device by changing the appropriate background size parameters in the <strong>_header.scss</strong> file. Also, you can easily change its height by using the <em>vh</em> parameter. By default, the following are the header's css values.</p>
+
+					<pre class="prettyprint lang-js">
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0, 0, 0, 0.05)), $textureMainBg;
+    box-shadow: inset 0 -10px 70px rgba(0, 0, 0, 0.75);
+    height: 75vh;
+    background-position: 75%;
+    @include mq-max-tablet {
+        background-position: 25%;
+    }
+    @include mq-ipad-pro-portrait {
+        background-position: 25%;
+    }
+}
+					</pre>
+
+					<p>After you make &amp; include your Game Logo (860x420 pixels - <strong>Game Logo.PSD</strong>), make sure you position it properly and adjust its size accordingly in the <strong>_header.scss</strong> file. By default, the following are the logo's css values.</p>
+
+					<pre class="prettyprint lang-js">
+.big-logo {
+    left: 50%;
+    top: 55%;
+    @include transform(translate(-50%, -90%));
+    width: 50%;
+    @include mq-max-tablet {
+        width: 80%;
+        top: 45%;
+        @include transform(translate(-50%, -65%));
+    }
+    @include mq-ipad-pro-portrait {
+        width: 75%;
+        top: 48%;
+    }
+    @include mq-max-smartphone {
+        width: 100%;
+    }
+}
+					</pre>
+
+					<div class="alert alert-info">Should you need a free .PSD to begin with your Logo, you can check the <a href="http://graphicburger.com/cinematic-title-text-effect/">Seven Gods</a> typography.</div>
+
+					<h4 id="structure-divider">Divider</h4>
+					<p>The Divider is a simple repeated image file, with a different middle section for emphasis. You can easily modify the image from its <strong>Divider.PSD</strong> file. Should you want to change its CSS values, you can look for them in the <strong>_helpers.scss</strong> file.</p>
+
+					<pre class="prettyprint lang-js">
+CLASSES TO LOOK FOR:
+
+.Divider {}
+.Divider-rule {}
+					</pre>					
+
+
+					<h4 id="structure-introduction">Introduction</h4>
+					<p>The Introductory Text of your Game Page is styled appropriately to suit your game's needs. A small different divider separates the main text from the Hero Section below, you can easily change it via the <strong>Separator Small.PSD</strong> file.</p>
+					<p>The Hero Section contains four different Game Classes, each with a unique text and characteristics in its clickable, modal popup window. The popup gets the image file from each class (you don't need a different image, for better loading times). Should you want to change the modal window's border, you can find everything you need in the <strong>Modal Frame 1.PSD</strong> &amp; <strong>Modal Frame 2.PSD</strong> files. The CSS controling this section can be found in the <strong>_features.scss</strong> &amp; <strong>_store.scss</strong> files.</p>
+
+					<pre class="prettyprint lang-js">
+CLASSES TO LOOK FOR:
+
+.modal {}
+    .modal-header {}
+    .modal-footer {}
+    .modal-body {}
+    img {}
+    .thumb-50 {}
+    #modal-price-tag {}
+.modal-open {}
+.img-thumbnail {}
+.modal-title {}
+					</pre>
+
+					<p>The modal window's elements can be found in the <strong>app.js</strong> file with the following default properties. Should you need to change any of the data/features, you can change them easily directly from the HTML.</p>
+
+					<textarea class="form-control" rows="3" style="width:100%">
+EXAMPLE FEATURES:
+<img class="features-img" src="img/character-1.jpg" alt="Aleister Hero Character" data-Strength="9" data-Dexterity="7" data-Agility="7" data-Willpower="8" data-Intelligence="4">					
+					</textarea>
+
+					<br>
+
+					<pre class="prettyprint lang-js">
+/////////////////////////////////////
+//      MODAL WINDOW FEATURES      //
+/////////////////////////////////////
+$('.features-item').on('click', function() {
+    var label = $('#myModalLabel');
+    var img = $('#showcase-img');
+    var price = $('#modal-price-tag');
+    var body = $('#modalBody');
+    var dataModel = $(this).find('img');
+    var modelfeats = $('#model-feats').find('li');
+
+    label.text('Hero Name: ' + $(this).find('.item-name-caption').text());
+    price.text($(this).find('.item-price-caption').text());
+    img.attr('src', dataModel.attr('src'));
+
+
+    $(modelfeats[0]).text('Strength: ' + dataModel.data('strength')); //Strength
+    $(modelfeats[1]).text('Dexterity: ' + dataModel.data('dexterity')); //Dexterity
+    $(modelfeats[2]).text('Agility: ' + dataModel.data('agility')); //Agility
+    $(modelfeats[3]).text('Willpower: ' + dataModel.data('willpower')); //Willpower
+    $(modelfeats[4]).text('Intelligence: ' + dataModel.data('intelligence')); //Intelligence
+});
+
+$('.shop-modal-hide').on('click', function(){
+    $('#shop-modal').modal('hide');
+}); 
+					</pre>
+
+					<p>The Button's styling can be changed to your desired effect through the <strong>Button.PSD</strong> &amp; <strong>_buttons.scss</strong> files. As you will notice, the buttons behave excellent with whatever text you prefer to insert, because of their unique repeat design.</p>
+
+					<pre class="prettyprint lang-js">
+CLASSES TO LOOK FOR:
+
+.button-game {}
+    .button-game-bg-mid {}
+    .button-game-bg-mid > span {}
+    .button-game-bg-left {}
+    .button-game-bg-right {}
+.button-game-apple {}
+.button-game-android {}
+.button-game-steam {}
+					</pre>
+
+
+					<h4 id="structure-gallery">Gallery</h4>
+					<p>Apart from the gallery's text, its most important elements are the Video Player &amp; the Images of Artwork or/and Screenshots. For the Video we have chosen the <a href="#youtube">Light YouTube embed</a> method, which is the best for representing your video in mobile devices with a custom screenshot, not loading the unnecessary full YouTube javascript gallery code. For the Images, you may use the simple <em>DIV</em> structure and add custom captions to each image.</p>
+					<p>Also note that you should change, according to the number of gallery elements, the number of the indicators. You can see their code below:</p>
+
+					<textarea class="form-control" rows="12" style="width:100%">
+<!-- Indicators -->
+<ol class="carousel-indicators">
+	<li data-target="#dragonic-carousel" data-slide-to="0" class="active"></li>
+	<li data-target="#dragonic-carousel" data-slide-to="1"></li>
+	<li data-target="#dragonic-carousel" data-slide-to="2"></li>
+	<li data-target="#dragonic-carousel" data-slide-to="3"></li>
+	<li data-target="#dragonic-carousel" data-slide-to="4"></li>
+	<li data-target="#dragonic-carousel" data-slide-to="5"></li>
+	<li data-target="#dragonic-carousel" data-slide-to="6"></li>
+	<li data-target="#dragonic-carousel" data-slide-to="7"></li>
+	<li data-target="#dragonic-carousel" data-slide-to="8"></li>                            
+</ol>						
+					</textarea>
+
+					<br>
+
+					<p>Regarding the Gallery's Control buttons, you can easily change them via the <strong>Carousel Controls.PSD</strong> &amp; <strong>Video Controls.PSD</strong> file. The CSS for most of the Gallery's elements can be found in the <strong>_gallery.scss</strong> file.</p>
+					<p>Finally, we have added a touch slider option for better navigation on the mobile devices. It is added in the <strong>app.js</strong> file, if you need to change it please make sure you change the <em>dragonic</em> name on its <em>ID</em>. You can find its code below:</p>
+
+					<pre class="prettyprint lang-js">
+/////////////////////////////////////
+//        CAROUSEL SWIPE           //
+/////////////////////////////////////   
+$("#dragonic-carousel").swiperight(function() {
+$(this).carousel('prev');
+});
+$("#dragonic-carousel").swipeleft(function() {
+$(this).carousel('next');
+});
+					</pre>					
+
+
+					<h4 id="structure-store">Store</h4>
+					<p>The Store Section of your Game Page is where your users can download your game, through the most famous channels (Apple AppStore, Google Play Store &amp; Valve Steam). You can easily change the images and text accordingly, we advise you to keep the same text length in each version.</p>
+					<p>Should you want to change the modal window's border, you can find everything you need in the <strong>Modal Frame 1.PSD</strong> &amp; <strong>Modal Frame 2.PSD</strong> files. The CSS controling this section can be found in the <strong>_store.scss</strong> &amp; <strong>_store.scss</strong> files.</p>
+
+					<pre class="prettyprint lang-js">
+CLASSES TO LOOK FOR:
+
+.modal {}
+    .modal-header {}
+    .modal-footer {}
+    .modal-body {}
+    img {}
+    .thumb-50 {}
+    #modal-price-tag {}
+.modal-open {}
+.img-thumbnail {}
+.modal-title {}
+					</pre>
+
+					<p>The modal window's elements can be found in the <strong>app.js</strong> file with the following default properties. Should you need to change any of the data/features, you can change them easily directly from the HTML.</p>
+
+					<textarea class="form-control" rows="4" style="width:100%">
+EXAMPLE FEATURES:
+<img src="img/dragonic-gameplay-01.jpg" alt="iOS Version">
+	<span class="item-price-caption hidden-xs">€ 4.99</span>
+	<span class="item-name-caption hidden-xs">AppStore - iOS Version</span>
+					</textarea>
+
+					<br>
+
+					<pre class="prettyprint lang-js">
+/////////////////////////////////////
+//      MODAL WINDOW GALLERY       //
+/////////////////////////////////////
+$('.gallery-item').on('click', function() {
+    var label = $('#myModalLabel');
+    var img = $('#showcase-img');
+    var price = $('#modal-price-tag');
+    var body = $('#modalBody');
+    var dataModel = $(this).find('img');
+    var modelfeats = $('#model-feats').find('li');
+
+    label.text('Dragonic: ' + $(this).find('.item-name-caption').text());
+    price.text($(this).find('.item-price-caption').text());
+    img.attr('src', dataModel.attr('src'));
+});
+
+$('div.thumbnail-50').on('click', function(){
+    $('img.img-thumbnail').addClass('thumb-50');
+    $('ul#model-feats').addClass('hide');
+});
+
+$('article.thumbnail-100').on('click', function(){
+    $('img.img-thumbnail').removeClass('thumb-50');
+    $('ul#model-feats').removeClass('hide');
+});
+					</pre>
+
+					<p>The Button's styling can be changed to your desired effect through the <strong>Button.PSD</strong> &amp; <strong>_buttons.scss</strong> files. As you will notice, the buttons behave excellent with whatever text you prefer to insert, because of their unique repeat design. You will notice that the buttons have custom logos of each Store. If you want to change them, you can check the <a href="#ionicons">Ionicons</a> in order to find different icons (i.e. Facebook).</p>
+
+					<pre class="prettyprint lang-js">
+CLASSES TO LOOK FOR:
+
+.button-game {}
+    .button-game-bg-mid {}
+    .button-game-bg-mid > span {}
+    .button-game-bg-left {}
+    .button-game-bg-right {}
+.button-game-apple {}
+.button-game-android {}
+.button-game-steam {}
+					</pre>
+
+
+					<h4 id="structure-review">Reviews &amp; Testimonials</h4>
+					<p>This section is dedicated to reviews and/or testimonials your players or team has to offer. You will need a Full HD background (1920x1080 pixels), that already has a predefined semi-transparent gradient for dramatic effect. Also, you will notice there are large quotes placed in each testimonial, for emphasis. You can find the CSS for this section in the <strong>_testimonials.scss</strong> file.</p>
+
+					<pre class="prettyprint lang-js">
+DEFAULT BACKGROUND GRADIENT:
+background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.25));
+box-shadow: inset 0 -10px 50px;
+					</pre>
+
+
+					<h4 id="structure-contact">Contact</h4>
+					<p>Apart from an engaging closure text, which is extra useful for the user that reaches the bottom of the page, you need a working Contact Form and an engaging Map module, so the user can easily reach to you and your team. Please make sure you properly connect the Contact Form to your website and choose the appropriate fields. It is really simple to add/subtract fields and change their default values. In order to access the form's CSS, you can check the <strong>_contact.scss</strong> file. In order to change the tickbox design, you can check the <strong>Checks.PSD</strong> file.</p>
+
+					<textarea class="form-control" rows="28" style="width:100%">
+DEFAULT OPTION VALUES:
+<div class="row">
+    <div class="col-sm-4 label-container">
+        <label>Reason: </label>
+    </div>
+    <div class="col-sm-8">
+        <select class="form-control">
+            <option selected>Career</option>
+            <option>Submit Bug</option>
+            <option>Testimonial</option>
+            <option>Other</option>
+        </select>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4 label-container">
+        <label>You found us: </label>
+    </div>
+    <div class="col-sm-8">
+        <select class="form-control">
+            <option selected>Search Engine</option>
+            <option>Friend</option>
+            <option>Advertisement</option>
+            <option>Free Promotion</option>
+            <option>Other</option>
+        </select>
+    </div>
+</div>
+					</textarea>
+
+					<br>
+
+					<p>In order to change and/or modify the Map, please check the dedicated section of the <a href="#maps">Google Maps</a> plugin.</p>
+
+
+					<h4 id="structure-footer">Footer</h4>
+					<p>The last section of your new page is one you mustn't neglect Young One! In the Footer we have added the following items: A hefty collection of links which smooth-scroll the user to the appropriate section, another collection of Social Icons and of course, your own Copyright! Should you need to modify the icons, please refer to the <a href="ionicons">Ionicons</a> section. Should you need to change anything in the CSS, please look at the <strong>_footer.scss</strong> file.</p>
+
+
+
+					<h2 id="youtube">Light YouTube Embed</h2>
+					<p>When embedding a video with the standard YouTube iframe, you load almost 0,5-1 Mb of extra data to your website, you can't control the thumbnail image and it's tough to get true responsive. With the Light YouTube embed method, all these belong to the past. We have included this great technic in the Premium Template you've downloaded and you can find its settings in the <strong>app.js</strong> file.</p>
+
+					<textarea class="form-control" rows="30" style="width:100%">
+/* Light YouTube Embeds by @labnol */
+/* Web: http://labnol.org/?p=27941 */
+
+document.addEventListener("DOMContentLoaded",
+    function() {
+        var div, n,
+            v = document.getElementsByClassName("youtube-player");
+        for (n = 0; n < v.length; n++) {
+            div = document.createElement("div");
+            div.setAttribute("data-id", v[n].dataset.id);
+            div.innerHTML = labnolThumb(v[n].dataset.id);
+            div.onclick = labnolIframe;
+            v[n].appendChild(div);
+        }
+    });
+
+function labnolThumb(id) {
+    var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">',
+        play = '<div class="play"></div>';
+    return thumb.replace("ID", id) + play;
+}
+
+function labnolIframe() {
+    var iframe = document.createElement("iframe");
+    var embed = "https://www.youtube.com/embed/ID?autoplay=1";
+    iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("allowfullscreen", "1");
+    this.parentNode.replaceChild(iframe, this);
+}
+					</textarea>
+
+					<br>
+
+					<div class="alert alert-info">Learn more about the <a href="https://www.labnol.org/internet/light-youtube-embeds/27941/">Light YouTube Embed</a></div>
+					<div class="alert alert-info">Embed your video <a href="https://www.labnol.org/internet/embed-mute-youtube-video/29149/">without Sound</a></div>
+
+
+
+					<h2 id="maps">Google Maps</h2>
+					<p>First and foremost, in order to have your Google Maps plugin running properly, you should get your API key. After properly replacing it in the script HTML at the bottom of the <strong>index.HTML</strong> page, you can easily modify the coordinates and Marker placement in the <strong>app.js</strong> file. Finally, in the same file you can change the colors and message on the Marker of the map to your liking by copy-pasting the available styles found in Snazzy Maps.</p>
+
+					<pre class="prettyprint lang-basic">
+/////////////////////////////////////
+//          GOOGLE MAPS            //
+/////////////////////////////////////
+var map = new GMaps({
+    div: '#gmaps',
+    lat: 37.9838096,
+    lng: 23.7275388,
+    zoom: 14
+});
+
+
+var styles = [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#ffcc88"}]},{"featureType":"administrative","elementType":"labels.text.stroke","stylers":[{"color":"#331111"}]},{"featureType":"administrative.country","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"administrative.province","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"administrative.province","elementType":"labels.text","stylers":[{"weight":"0.01"},{"saturation":"0"},{"color":"#ffcc88"},{"visibility":"simplified"}]},{"featureType":"administrative.locality","elementType":"labels.text","stylers":[{"visibility":"on"}]},{"featureType":"administrative.locality","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"weight":"2.00"}]},{"featureType":"administrative.neighborhood","elementType":"labels.text","stylers":[{"visibility":"on"}]},{"featureType":"administrative.land_parcel","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"color":"#331111"},{"gamma":1.57}]},{"featureType":"landscape.man_made","elementType":"labels.text","stylers":[{"visibility":"on"}]},{"featureType":"landscape.man_made","elementType":"labels.text.fill","stylers":[{"visibility":"on"}]},{"featureType":"landscape.natural","elementType":"all","stylers":[{"color":"#331111"},{"gamma":1.39}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#331111"},{"gamma":1.22}]},{"featureType":"poi","elementType":"labels.text.fill","stylers":[{"color":"#ffcc88"},{"visibility":"on"}]},{"featureType":"poi","elementType":"labels.text.stroke","stylers":[{"color":"#331111"},{"weight":2.6}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"simplified"},{"lightness":-100},{"gamma":1},{"saturation":-72},{"weight":0.1}]},{"featureType":"road","elementType":"geometry","stylers":[{"color":"#331111"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#ffcc88"}]},{"featureType":"road","elementType":"labels.text.stroke","stylers":[{"color":"#331111"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#331111"}]},{"featureType":"transit.station.airport","elementType":"labels.text.fill","stylers":[{"color":"#331111"},{"gamma":"2"}]},{"featureType":"transit.station.airport","elementType":"labels.text.stroke","stylers":[{"color":"#331111"}]},{"featureType":"transit.station.airport","elementType":"labels.icon","stylers":[{"visibility":"on"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#331111"}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"color":"#331111"},{"gamma":"1.50"}]},{"featureType":"water","elementType":"labels.text.stroke","stylers":[{"weight":"2"}]}];
+
+map.setOptions({styles: styles});
+
+map.addMarker({
+    lat: 37.9838096,
+    lng: 23.7275388,
+    title: 'Athens HQ',
+    infoWindow: {
+        content: '<p>Our headquarters and main workshop situated in beautiful Athens &hearts; Come see us!</p>'
+    }
+});
+					</pre>
+
+					<br>
+
+					<div class="alert alert-info">Grab your API Key <a href="https://developers.google.com/maps/documentation/android-api/signup">here</a></div>
+					<div class="alert alert-info">Find your Longitude &amp; Latitude <a href="https://support.google.com/maps/answer/18539?co=GENIE.Platform%3DDesktop&hl=en">here</a></div>
+					<div class="alert alert-info">Change your maps' styling through <a href="https://snazzymaps.com/">Snazzy Maps</a></div>
+
+
+
+					<h2 id="fonts">Google Fonts</h2>
+					<p>You can change or insert very easily any Google Font you desire in our Template. Simply choose the font you desire, replace or add the appropriate code in the <em>head</em> section of the page and add the font in whichever placement you want in the CSS code, extremely easily via the <strong>_variables.scss</strong> file.</p>
+
+					<pre class="prettyprint lang-basic">
+//fonts;
+$mainFont: "Cinzel Decorative", 'Palatino Light', Times, Times New Roman, Georgia, serif;
+$secondaryFont: Helvetica, Arial, sans-serif;
+$tertiaryFont: 'Palatino Light', Times, Times New Roman, Georgia, serif;
+					</pre>
+
+					<br>
+
+					<div class="alert alert-info">Choose your new <a href="https://fonts.google.com/">Google Font</a></div>
+
+
+
+					<h2 id="ionicons">Ionicons</h2>
+					<p>In order to have the lightest icons for your every need, we adopted in our Template the rich Ionicons library. That way, you won't need to load bulky images that work poorly on mobile &amp; retina displays - every icon is crisp, crystal clear in every situation possible. The code for removing them or adding them to other projects you may have is the following:</p>
+
+					<textarea class="form-control" rows="1" style="width:100%">
+<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+					</textarea>
+
+					<br>
+
+					<div class="alert alert-info">Browse all the rich library in the <a href="http://ionicons.com/">Ionicons Website</a></div>
+
+
+
+					<h2 id="responsive">Responsive Classes</h2>
+					<p>In order to run perfectly in mobile devices, some classes need to change dynamically per resolution. In order to fix this, we added the following code in our <strong>app.js</strong> file, where you can change them based on your needs.</p>
+
+					<pre class="prettyprint lang-basic">
+/////////////////////////////////////
+//   CHANGE CLASSES RESPONSIVE     //
+/////////////////////////////////////  
+$(window).resize(function(){
+var width = $(window).width();
+if(width >= 300 && width <= 1024){
+$('.item-1, .item-2, .item-3').removeClass('col-sm-3 col-xs-5').addClass('col-sm-5 col-xs-12');
+$('.features-item').removeClass('col-md-3').addClass('col-md-6');
+$('.item-3').removeClass('col-sm-offset-1').addClass('col-sm-offset-3');
+$('.item-2').removeClass('col-xs-offset-2').addClass('col-xs-offset-0');       
+}
+else{
+$('.item-1, .item-2, .item-3').removeClass('col-sm-5 col-xs-12').addClass('col-sm-3 col-xs-5');
+$('.features-item').removeClass('col-md-6').addClass('col-md-3');
+$('.item-3').removeClass('col-sm-offset-3').addClass('col-sm-offset-1');
+$('.item-2').removeClass('col-xs-offset-0').addClass('col-xs-offset-2');        
+}
+})
+.resize();//trigger the resize event on page load.
+					</pre>
+
+					
+
+					<h2 id="zoom">Stop Pinch Zoom</h2>
+					<p>For many users, zoom on pinch is something that confuses their experience. For most web designers, it is frustrating to see their design "in ruins" because of pinch zooming. As a solution for this, we implemented a Stop Pinch Zoom script for your convenience. Should you need to edit / tamper with it, you can find it in the <strong>app.js</strong> file.</p>
+
+					<pre class="prettyprint lang-basic">
+/////////////////////////////////////
+//        STOP PINCH ZOOM          //
+/////////////////////////////////////  
+
+document.addEventListener('gesturestart', function (e) {
+	e.preventDefault();
+});
+					</pre>
+
+					<br>
+
+					<div class="alert alert-info">See more info on this in <a href="https://stackoverflow.com/questions/4389932/how-do-you-disable-viewport-zooming-on-mobile-safari">Stack Overflow</a></div>
+
+
+
+					<h2 id="favicon">Favicon</h2>
+					<p>Something most people miss, but is crucial to the professional level of representation of your game page, is the Favicon. We researched and found the best and simplest way for you to implement beautiful favicons, ready for each different device. Simply edit the <strong>Favicon.PSD</strong> file, insert your game's icon and save as a large .PNG file (for lossless quality). Afterwards, head to the Favicon Generator website to create all your favicons, insert them in your <em>head</em> code and... voila!</p>
+
+					<textarea class="form-control" rows="15" style="width:100%">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#181818">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#181818">
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+					</textarea>
+
+					<br>
+
+					<div class="alert alert-info">Create all your appropriate icons in the <a href="http://www.favicon-generator.org/">Favicon Generator</a></div>
+
+
+
+					<h2 id="colors">Theme Colors &amp; Textures</h2>In order to make your life easier, we have added most colors in palettes and groups, along with the Textures, where you can create your own Themes. Right now, the Medieval Color Theme is what runs in Dragonic. Please refer to the <strong>_variables.scss</strong> file for editting of the default colors &amp; textures, which are listed below:</p>
+
+					<pre class="prettyprint lang-basic">
+//colors;
+$blackColor: #383838;
+$blackerColor: #000000;
+$whiteColor: #ffffff;
+
+$mainColor: #c4ae78;
+$secondaryColor: #ecd19a;
+$secondaryColorHover: #f3e6d0;
+$tertiaryColor: #ad835a;
+$tertiaryColorHover: #be9d7c;
+
+$navBarBg: linear-gradient(rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 0.75));
+$borderColor: #3f2f29;
+$borderColorLight: #752b1a;
+$buttonColor: #f3aa55;
+$buttonBorder01: #b93a27;
+$buttonBorder02: #9e1e0b;
+$imageBorder: #9d9280;
+$imageText: #71675b;
+$imageShadow: #37271b;
+$imageShadowHover: rgba(97, 51, 40, 0.9);
+$imagePanel: rgba(24, 10, 7, 0.7);
+$textShadow01: #99774c;
+$textShadow02: #a17e51;
+$textShadow03: #96744a;
+$inputBg: #29221c; 
+$inputBorder: 1px solid #62351f; 
+$inputBorderTop: #734a32;
+$inputColor: #ffcb8d;
+$selectionBg: #b2321f;
+$testimonialsColor: #fffcd9;
+
+//background images;
+$textureMainBg: url(../img/Dragonic.jpg);
+$textureBg01: url(../img/dark_wall.png);
+$textureBg02: url(../img/dark_leather.png);
+$textureBgDevs: url(../img/developers.jpg);
+$textureChecks: url(../img/checks.png);
+$textureDvdr01: url(../img/divider-sprite.png);
+$textureDvdr02: url(../img/blog-separator-2.png);
+$textureBtn: url(../img/button-sprite.png);
+$textureSldrArrow: url(../img/carousel-sprite.png);
+$textureVideoPlay: url(../img/video-play.png);
+$textureModalBorder01: url(../img/modal.png);
+$textureModalBorder02: url(../img/modal-frame.png);
+$textureVideoBorder01: url(../img/item-border-sprite.png);
+$textureVideoBorder02: url(../img/item-border-frame-sprite.png);
+$textureLogo: url(../img/logo-compact.png);
+					</pre>
+
+
+
+					<h2 id="seo">SEO</h2>
+					<p>In order for your game page to be visible in the best way possible in every Search Engine, we have included many of the Best Practices on SEO in our Premium Template. You can find the meta-sections with keywords and descriptions, alt-texts in every image, schema markup in the game version and features, correct use of the Headings, etc. We sincerely hope by using them and our template, you will get your game at the top of the search results in no time.</p>
+
+					<div class="alert alert-info">Learn more on SEO from the experts of <a href="https://moz.com/blog">SEOMOZ</a> &amp; <a href=""http://searchengineland.com/>Search Engine Land</a></div>
+
+
+
+					<h2 id="changelog">Changelog</h2>
+
+					<p> Version 1.0</p>
+					<ul>
+						<li>This is the first version, young Padawan</li>
+					</ul>
+
+				</section>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Javascript files -->
+	<!-- jQuery -->
+	<script src="assets/js/jquery-1.11.0.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<!--HL -->
+	<script src="assets/js/prettify/prettify.js"></script>
+	<!-- Custom scripts -->
+	<script src="assets/js/custom.js"></script>
+
+</body>
+</html>

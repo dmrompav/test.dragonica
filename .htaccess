@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule ^ru / [L]
+RewriteRule ^en / [L]
+RewriteRule ^de / [L]
+ErrorDocument 404 /

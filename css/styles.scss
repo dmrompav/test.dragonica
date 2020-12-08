@@ -1,0 +1,90 @@
+//compileOnSave
+
+/*------------------------------------------------------------------
+
+[Master Stylesheet]
+
+Project:	Dragonic
+Version:	1.0.0
+Last change:	29/08/2017 [added CSS Table of Contents]
+Assigned to:	Sensei Minimal
+Primary use:	HTML Theme
+
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+
+[Table of contents]
+
+1. Base / #base
+	1.1. Body / #body
+	1.2. Placeholders / #placeholders
+	1.3. Helpers / #helpers
+
+2. Components / #components
+	2.1. Navigations / #navigations
+		2.1.1. Main Navigation / #main-nav
+		2.1.2. Social Navigation / #social-nav
+	2.2. Miscellaneous / #misc
+		2.2.1. Buttons / #buttons
+		2.2.2. Dropdown Searchbox / #dropdown-searchbox
+
+3. Layout / #layout
+	3.1. Header / #header
+	3.2. Features / #features
+	3.3. Gallery / #gallery
+	3.4. Store / #store
+	3.5. Testimonials / #testimonials
+	3.6. Contact / #contact
+	3.7. Footer / #footer
+	3.8. YouTube  / #youtube
+
+4. Icons / #icons
+	4.1. Ionicons / #ionicons
+
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+
+[Fonts]
+
+Main Font: "Cinzel Decorative", 'Palatino Light', Times, Times New Roman, Georgia, serif;
+Secondary Font: Helvetica, Arial, sans-serif;
+Tertiary Font: 'Palatino Light', Times, Times New Roman, Georgia, serif;
+
+-------------------------------------------------------------------*/
+
+
+
+//compileOnSave
+
+//Vendors
+@import 'bourbon/bourbon';
+@import 'vendors/bootstrap/bootstrap.min.css';
+
+//Base
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/base';
+@import 'base/placeholders';
+@import 'base/helpers';
+
+//Components
+    //Navigations
+    @import 'navigations/main-nav';
+    @import 'navigations/social-nav';
+    //Misc
+    @import 'components/buttons';
+    @import 'components/dropdown-searchbox';
+
+//Layout
+@import 'layouts/header';
+@import 'layouts/features';
+@import 'layouts/gallery';
+@import 'layouts/store';
+@import 'layouts/testimonials';
+@import 'layouts/contact';
+@import 'layouts/footer';
+@import 'layouts/youtube';
+
+//Icons
+@import 'vendors/ionicons/ionicons.min';
